@@ -14,16 +14,77 @@
         <h1>Simple form</h1>
       </header>
 
+      <dialog>
+        <div>
+          <p>Nome</p>
+          <p id="name-output"></p>
+        </div>
+        <div>
+          <p>Email</p>
+          <p id="email-output"></p>
+        </div>
+        <div>
+          <p>Telefone</p>
+          <p id="phone-output"></p>
+        </div>
+        <div>
+          <p>Cidade</p>
+          <p id="city-output"></p>
+        </div>
+        <div>
+          <p>Data de nascimento</p>
+          <p id="dob-output"></p>
+        </div>
+        <div>
+          <p>Cor favorita</p>
+          <p id="fav-color-output"></p>
+        </div>
+
+        <div>
+          <p>Website favorito</p>
+          <p id="fav-website-output"></p>
+        </div>
+        <div>
+          <p>Filme favorito</p>
+          <p id="fav-movie-output"></p>
+        </div>
+        <div>
+          <p>Ator favorito</p>
+          <p id="fav-actor-output"></p>
+        </div>
+        <div>
+          <p>Gosta de ler?</p>
+          <p id="like-reading-output"></p>
+        </div>
+        <div>
+          <p>Biografia</p>
+          <p id="bio-output"></p>
+        </div>
+        <button>Fechar modal</button>
+      </dialog>
+
       <main>
         <form>
           <div>
             <label for="name">Nome</label>
-            <input type="text" id="name" name="name" autocomplete="name" />
+            <input
+              type="text"
+              id="name"
+              name="name"
+              autocomplete="name"
+              required
+            />
           </div>
 
           <div>
             <label for="email">Email</label>
-            <input type="email" id="email" name="email" autocomplete="email" />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              autocomplete="email"
+              required
+            />
           </div>
 
           <div>
@@ -40,28 +101,40 @@
 
           <div>
             <label for="city">Cidade</label>
-            <input type="text" id="city" name="city" />
+            <input type="text" id="city" name="city" required />
           </div>
 
           <div>
             <label for="date-of-birth">Data de nascimento</label>
-            <input type="date" id="date-of-birth" name="date-of-birth" />
+            <input
+              type="date"
+              id="date-of-birth"
+              name="date-of-birth"
+              required
+            />
           </div>
 
           <div>
             <label for="fav-color">Cor favorita</label>
-            <input type="color" id="fav-color" name="fav-color" />
+            <input type="color" id="fav-color" name="fav-color" required />
           </div>
 
           <div>
             <label for="fav-website">Website favorito</label>
-            <input type="url" id="fav-website" name="fav-website" />
+            <input type="url" id="fav-website" name="fav-website" required />
+            <small>Formato: https://www.website.com</small>
           </div>
 
           <div>
             <fieldset>
               <legend>Filme preferido</legend>
-              <input type="radio" id="rocky" name="fav-movie" value="Rocky" />
+              <input
+                type="radio"
+                id="rocky"
+                name="fav-movie"
+                value="Rocky"
+                required
+              />
               <label for="rocky">Rocky</label>
 
               <input
@@ -70,6 +143,7 @@
                 name="fav-movie"
                 value="Terminator"
                 checked
+                required
               />
               <label for="terminator">Terminator</label>
             </fieldset>
@@ -77,7 +151,7 @@
 
           <div>
             <label for="fav-actor">Ator favorito</label>
-            <select name="fav-actor" id="fav-actor">
+            <select name="fav-actor" id="fav-actor" required>
               <option value="">--Selecione uma opção--</option>
               <option value="Arnold Schwarzenegger">
                 Arnold Schwarzenegger
@@ -86,7 +160,7 @@
               <option value="Jean-Claude Van Damme">
                 Jean-Claude Van Damme
               </option>
-              <option value="Nenhum desses atores">Nenhum deles</option>
+              <option value="Outro">Outro</option>
             </select>
           </div>
 
@@ -97,7 +171,14 @@
 
           <div>
             <label for="bio">Descreva sua personalidade</label>
-            <textarea name="bio" id="bio" cols="30" rows="10"></textarea>
+            <textarea
+              name="bio"
+              id="bio"
+              cols="30"
+              rows="10"
+              placeholder="Escreva um pouco sobre você"
+              required
+            ></textarea>
           </div>
 
           <button type="submit">Enviar</button>

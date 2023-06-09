@@ -42,6 +42,28 @@ body {
   max-width: 400px;
 }
 
+/* || Dialog */
+dialog {
+  width: 80%;
+  max-width: 350px;
+}
+
+dialog::backdrop {
+  background: rgb(0, 0, 0, 0.7);
+}
+
+dialog > div {
+  margin-bottom: 0.5rem;
+}
+dialog > div > p:first-child {
+  color: #2563eb;
+  margin-bottom: 0;
+}
+
+dialog p {
+  margin: 0;
+}
+
 /* || Form */
 
 form {
@@ -63,12 +85,14 @@ input[type='text'],
 input[type='tel'],
 input[type='email'],
 input[type='date'],
-input[type='color'],
 input[type='url'],
 select,
 textarea {
   width: 100%;
   padding: 0.45rem;
+}
+input[type='color'] {
+  display: block;
 }
 
 button {
