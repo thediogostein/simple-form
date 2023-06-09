@@ -1,0 +1,22 @@
+First name
+Last name
+Email
+Phone
+Country
+Date of birth
+Favorite color
+
+Favorite website
+
+-checkbox
+// Dropdown
+select
+  option
+
+  <fieldset>
+    <legend></legend>
+    --label and input
+    --label and input
+  </fieldset>
+–radio
+Short bio

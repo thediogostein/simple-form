@@ -1,0 +1,92 @@
+/* || Variables */
+:root {
+  --accent-1: #2563eb;
+  --accent-2: #3b82f6;
+
+  --bg-1: #0c132b;
+
+  --text-1: #eff6ff;
+  --text-2: #dbeafe;
+}
+
+/* || Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3 {
+  margin-top: 0;
+}
+
+/* || General styles */
+body {
+  background: var(--bg-1);
+  color: var(--text-1);
+  padding-top: 1rem;
+}
+
+/* || Utils */
+.wrapper {
+  width: 90%;
+  margin-inline: auto;
+  max-width: 400px;
+}
+
+/* || Form */
+
+form {
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+form > div {
+  margin-bottom: 0.75rem;
+}
+
+label {
+  display: inline-block;
+  font-size: 1.1rem;
+  margin-bottom: 0.1rem;
+}
+
+input[type='text'],
+input[type='tel'],
+input[type='email'],
+input[type='date'],
+input[type='color'],
+input[type='url'],
+select,
+textarea {
+  width: 100%;
+  padding: 0.45rem;
+}
+
+button {
+  margin-top: 1rem;
+  display: block;
+  padding: 0.5rem 2rem;
+  font-size: 1.2rem;
+  background-color: var(--accent-1);
+  color: var(--text-1);
+  border: none;
+  cursor: pointer;
+}
+
+button:hover,
+button:focus {
+  background-color: var(--accent-2);
+}
+/* || Footer */
+footer {
+  text-align: center;
+}

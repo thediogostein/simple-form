@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -8,5 +8,105 @@
     <script src="js/main.js" defer></script>
     <title>Simple form</title>
   </head>
-  <body></body>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Simple form</h1>
+      </header>
+
+      <main>
+        <form>
+          <div>
+            <label for="name">Nome</label>
+            <input type="text" id="name" name="name" autocomplete="name" />
+          </div>
+
+          <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" autocomplete="email" />
+          </div>
+
+          <div>
+            <label for="phone">Telefone</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              pattern="[0-9]{2}-[0-9]{5}-[0-9]{4}"
+              required
+            />
+            <small>Formato: 54-99997-4444</small>
+          </div>
+
+          <div>
+            <label for="city">Cidade</label>
+            <input type="text" id="city" name="city" />
+          </div>
+
+          <div>
+            <label for="date-of-birth">Data de nascimento</label>
+            <input type="date" id="date-of-birth" name="date-of-birth" />
+          </div>
+
+          <div>
+            <label for="fav-color">Cor favorita</label>
+            <input type="color" id="fav-color" name="fav-color" />
+          </div>
+
+          <div>
+            <label for="fav-website">Website favorito</label>
+            <input type="url" id="fav-website" name="fav-website" />
+          </div>
+
+          <div>
+            <fieldset>
+              <legend>Filme preferido</legend>
+              <input type="radio" id="rocky" name="fav-movie" value="Rocky" />
+              <label for="rocky">Rocky</label>
+
+              <input
+                type="radio"
+                id="terminator"
+                name="fav-movie"
+                value="Terminator"
+                checked
+              />
+              <label for="terminator">Terminator</label>
+            </fieldset>
+          </div>
+
+          <div>
+            <label for="fav-actor">Ator favorito</label>
+            <select name="fav-actor" id="fav-actor">
+              <option value="">--Selecione uma opção--</option>
+              <option value="Arnold Schwarzenegger">
+                Arnold Schwarzenegger
+              </option>
+              <option value="Sylvester Stallone">Sylvester Stallone</option>
+              <option value="Jean-Claude Van Damme">
+                Jean-Claude Van Damme
+              </option>
+              <option value="Nenhum desses atores">Nenhum deles</option>
+            </select>
+          </div>
+
+          <div>
+            <input type="checkbox" id="like-reading" />
+            <label for="like-reading">Gosta de ler?</label>
+          </div>
+
+          <div>
+            <label for="bio">Descreva sua personalidade</label>
+            <textarea name="bio" id="bio" cols="30" rows="10"></textarea>
+          </div>
+
+          <button type="submit">Enviar</button>
+        </form>
+      </main>
+
+      <footer>
+        <p>Copyright by Diogo Stein</p>
+      </footer>
+    </div>
+  </body>
 </html>
